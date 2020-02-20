@@ -1,25 +1,8 @@
-<!DOCTYPE html>
-<html>
+@extends('layout')
+@section('content')
 
-<head>
-    <title>Vadim's Portfolio - Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
 <div class="container">
     <a name="top"></a>
-    <div class="navbar">
-        <ul>
-            <ul>
-                <li><a class="active" href="/">Landingspagina</a></li>
-                <li><a class="active" href="de-persoonlijke-introductiepagina">De persoonlijke introductiepagina</a></li>
-                <li><a class="active" href="persoonlijk-dashboard">Persoonlijk dashboard</a></li>
-                <li><a class="active" href="motivatie">Motivatie</a></li>
-                <li><a class="active current" href="beroepsbeeld">beroepsbeeld</a></li>
-            </ul>
-        </ul>
-    </div>
 
     <h1>Beroepsbeeld</h1>
     <div>
@@ -82,7 +65,4 @@
         <p>In de bedrijven safari zijn we naar drie verschillende bedrijven gegaa: Syntess, Yoursurprise en Omoda.
             Van de drie bedrijven vond ik Syntess het meest interessantste, dit komt omdat zij als enigste van de drie daadwerkelijk nieuwe software ontwikkelen voor andere bedrijven. Op de tweede plaats stond Yoursuprise. Ze maken wel software maar het ze doen voornamelijk web development. Op de derde plek zet ik Omoda, het is een normaal magazijn maar met een verouderde ICT afdeling.
         </p></div>
-
-</body>
-
-</html>
+    @endsection

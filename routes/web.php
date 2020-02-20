@@ -11,14 +11,38 @@
 |
 */
 
-Route::get('posts/{slug}', 'GradesController@show');
 
-Route::get('/', 'HomeController@index');
-Route::get('/de-persoonlijke-introductiepagina', 'HomeController@dePersoonlijkeIntroductiepagina');
-Route::get('/persoonlijk-dashboard', 'HomeController@persoonlijkDashboard');
+Route::get('', 'HomeController@index');
+Route::get('/introductie', 'HomeController@introductie');
 Route::get('/motivatie', 'HomeController@motivatie');
 Route::get('/beroepsbeeld', 'HomeController@beroepsbeeld');
-Route::get('/grades', 'HomeController@grades');
+
+
+
+Route::get('/articles', 'ArticlesController@index');
+Route::post('/articles', 'ArticlesController@store');
+Route::get('/articles/create', 'ArticlesController@create');
+Route::get('/articles/{article}', 'ArticlesController@show');
+Route::get('/articles/{article}/edit', 'ArticlesController@edit');
+Route::put('/articles/{article}', 'ArticlesController@update' );
+
+
+
+Route::get('/dashboard', 'CourseController@index' );
+Route::get('/dashboard/create/course', 'CourseController@create');
+Route::post('/dashboard', 'CourseController@store');
+Route::get('/dashboard/{id}/edit/course', 'CourseController@edit' );
+Route::put('/dashboard/{id}/edit/course', 'CourseController@update' );
+Route::delete('/dashboard/{id}', 'CourseController@delete' );
+
+
+
+
+
+
+
+
+
 
 
 

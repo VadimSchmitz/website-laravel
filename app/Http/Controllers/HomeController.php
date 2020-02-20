@@ -10,9 +10,9 @@ class HomeController extends Controller
         return view('index');
     }
 
-    public function dePersoonlijkeIntroductiepagina()
+    public function introductie()
     {
-        return view("de-persoonlijke-introductiepagina");
+        return view("introductie");
     }
 
     public function motivatie()
@@ -20,9 +20,9 @@ class HomeController extends Controller
         return view('motivatie');
     }
 
-    public function persoonlijkDashboard()
+    public function dashboard()
     {
-        return view('persoonlijk-dashboard');
+        return view('dashboard');
     }
 
     public function beroepsbeeld()
@@ -30,8 +30,9 @@ class HomeController extends Controller
         return view('beroepsbeeld');
     }
 
-    public function grades()
+    public function blog()
     {
-        return view('grades');
+        return view('blog');
     }
+
 }

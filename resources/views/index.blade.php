@@ -1,27 +1,7 @@
-<!DOCTYPE html>
-<html>
+@extends('layout')
 
-<head>
-    <title>Vadim's Portfolio - Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-
-<div class="container">
-    <a name="top"></a>
-    <div class="navbar">
-        <ul>
-            <ul>
-                <li><a class="active current" href="/">Landingspagina</a></li>
-                <li><a class="active" href="de-persoonlijke-introductiepagina">De persoonlijke introductiepagina</a></li>
-                <li><a class="active" href="persoonlijk-dashboard">Persoonlijk dashboard</a></li>
-                <li><a class="active" href="motivatie">Motivatie</a></li>
-                <li><a class="active" href="beroepsbeeld">beroepsbeeld</a></li>
-            </ul>
-        </ul>
-
-    </div>
+    @section('content')
     <div>
         <h1>Het HBO-niveau past bij mij omdat...</h1>
         <p>Ik heb voor HBO ICT gekozen omdat ik het onderwerp heel erg interessant vind, verder vind ik
@@ -41,8 +21,4 @@
             src="https://cdn3.iconfinder.com/data/icons/gadget-3/100/office-22-512.png"></div>
 
     <div class=spacer></div>
-    <a href="#top">Back to top</a>
-</div>
-</body>
-
-</html>
+    @endsection

@@ -1,26 +1,6 @@
-<!DOCTYPE html>
-<html>
+@extends('layout')
+@section('content')
 
-<head>
-    <title>Motivatie</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-<div class="container">
-    <a name="top"></a>
-    <div class="navbar">
-        <ul>
-            <ul>
-                <li><a class="active" href="/">Landingspagina</a></li>
-                <li><a class="active" href="de-persoonlijke-introductiepagina">De persoonlijke introductiepagina</a></li>
-                <li><a class="active" href="persoonlijk-dashboard">Persoonlijk dashboard</a></li>
-                <li><a class="active current" href="motivatie">Motivatie</a></li>
-                <li><a class="active" href="beroepsbeeld">beroepsbeeld</a>
-                </li>
-            </ul>
-        </ul>
-    </div>
 
     <div>
         <h1>Theorie</h1>
@@ -170,10 +150,5 @@
             </li>
         </ol>
     </div>
-    <a href="#top">Back to top</a>
-
-
 </div>
-</body>
-
-</html>
+@endsection

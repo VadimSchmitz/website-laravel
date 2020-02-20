@@ -4,7 +4,7 @@ body {
     color: #555;
     font-family: 'Arial', 'Verdana', 'sans-serif';
     font-size: 18px;
-    
+
     font-weight: normal;
     line-height: 1.6em;
     border-left: black solid 7px;
@@ -56,7 +56,7 @@ body {
 .list-1 .list-head{
     font-size: 28px;
     font-weight:bold;
-    
+
 }
 
 .list-1 .list-head li{
@@ -64,6 +64,21 @@ body {
     font-weight:normal;
 }
 
+table , td, tr, th{
+    border-collapse: collapse;
+
+}
+
+tr, td, th{
+    padding-left: 1vh;
+    margin-bottom: 0px;
+}
+
+table .td-p {
+    margin-bottom: 0vh;
+    padding-right: 5vh;
+    text-wrap: none;
+}
 
 /* table layout*/
 .table-1 td {
